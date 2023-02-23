@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            width:90%;
+            display:grid;
+            margin:auto;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(5,40px);
+            gap : 10px 10px;
+            background-color:#212121;
+            padding : 30px 30px 30px 30px;
+            border-radius:5px;
+        }
+        .grid>buttons{
+            background-color:#424242;
+            color:aqua;
+            text-align:center;
+            border-radius:5px;
+            padding-top: 10px;
+            
+        }
+        #shift {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 10;
+            grid-column-end: 12;
+        }
+        #enter {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 10;
+            grid-column-end: 12;
+        }
+        #space {
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 5;
+            grid-column-end: 9;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <buttons>~</buttons>
+        <buttons>1</buttons>
+        <buttons>2</buttons>
+        <buttons>3</buttons>
+        <buttons>4</buttons>
+        <buttons>5</buttons>
+        <buttons>6</buttons>
+        <buttons>7</buttons>
+        <buttons>8</buttons>
+        <buttons>9</buttons>
+        <buttons>0</buttons>
+        <buttons>delete</buttons>
+        <buttons>Tab</buttons>
+        <buttons>Q</buttons>
+        <buttons>W</buttons>
+        <buttons>E</buttons>
+        <buttons>R</buttons>
+        <buttons>T</buttons>
+        <buttons>Y</buttons>
+        <buttons>U</buttons>
+        <buttons>I</buttons>
+        <buttons>O</buttons>
+        <buttons>P</buttons>
+        <buttons>\</buttons>
+        <buttons>Caps</buttons>
+        <buttons>A</buttons>
+        <buttons>S</buttons>
+        <buttons>D</buttons>
+        <buttons>F</buttons>
+        <buttons>G</buttons>
+        <buttons>H</buttons>
+        <buttons>J</buttons>
+        <buttons>K</buttons>
+        <buttons>L</buttons>
+        <buttons id="enter">Enter</buttons>
+        <buttons>Shift</buttons>
+        <buttons>Z</buttons>
+        <buttons>X</buttons>
+        <buttons>C</buttons>
+        <buttons>V</buttons>
+        <buttons>B</buttons>
+        <buttons>N</buttons>
+        <buttons>M</buttons>
+        <buttons><</buttons>
+        <buttons>></buttons>
+        <buttons id="shift">Shift</buttons>
+        <buttons>boss</buttons>
+        <buttons>control</buttons>
+        <buttons>option</buttons>
+        <buttons>alt</buttons>
+        <buttons id="space">space</buttons>
+        <buttons>alt</buttons>
+        <buttons>option</buttons>
+        <buttons><-</buttons>
+        <buttons>-></buttons>
+    </div>
+</body>
+</html>
