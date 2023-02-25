@@ -1,0 +1,89 @@
+/* Write your styles here */
+*{
+ box-sizing:border-box;
+}
+body{
+    margin:0px;
+    padding:0px;
+    
+}
+#header {
+    text-align:center;
+}
+#doctors{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:25px;
+    text-align:center;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+button{
+    border-radius: 25px;
+    
+    
+}
+
+
+
+
+
+#doctors img{
+    width:100%;
+
+}
+#doctors div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding-bottom:10px;
+    
+}
+#doctors div button:nth-child(2n){
+    color:white;
+    background-color: red;
+    border:2px solid red;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+#doctors div button:nth-child(2n+1){
+    color:teal;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    border:2px solid white;
+    
+}
+#service {
+    width:80%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:auto;
+    gap:20px;
+    text-align:center;
+    margin-top:75px;
+}
+   
+
+/* Keep media queries at the bottom */
+   
+
+/* Medium Screen  */
+@media all and (min-width:451px) and (max-width:750px) {
+    #doctors{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #service{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+/* Small Screen  */
+@media all and (min-width:100px) and (max-width:450px) {
+   #doctors{
+    grid-template-columns: repeat(1,1fr);
+   }
+   #service{
+    grid-template-columns: repeat(1,1fr);
+}
+}
