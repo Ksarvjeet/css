@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            padding-left:90px;
+            padding-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <input id="num1" type="number" placeholder="enter 1st number">
+    <input id="num2" type="number" placeholder="enter 2nd number">
+    <br>
+    <div class="cont">
+        <button onclick="addition();">Add</button>
+    <button onclick="subtraction();">Sub</button>
+    <button onclick="multiplication();">Mul</button>
+    <button onclick="division();">Div</button>
+    </div>
+</body>
+<script>
+   let number1=document.getElementById("num1");
+   let number2=document.getElementById("num2");
+    function addition(){
+        let answer= Number(number1.value) + Number(number2.value);
+        alert(answer);
+        // console.log(typeof number1.value);
+    }
+    function subtraction(){
+        let answer= Number(number1.value) - Number(number2.value);
+        alert(answer);
+    }
+    function multiplication(){
+        let answer= Number(number1.value) * Number(number2.value);
+        alert(answer);
+    }
+    function division(){
+        let answer= Number(number1.value) / Number(number2.value);
+        alert(answer);
+    }
+</script>
+</html>
